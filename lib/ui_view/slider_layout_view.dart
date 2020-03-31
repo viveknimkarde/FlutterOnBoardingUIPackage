@@ -67,7 +67,7 @@ class _SliderLayoutViewState extends State<SliderLayoutView> {
                       child: GestureDetector(
                         onTap: () {
                           print(_currentPage);
-                          if (_currentPage <= slides.length-1) {
+                          if (_currentPage < slides.length-1) {
                             _pageController.jumpToPage(_currentPage+1);
                           } else {
                             Configs.getInstance().onFinish();
